@@ -1,0 +1,82 @@
+.login-header {
+  --background: #e5e5e5;
+  flex: 1;
+}
+
+.login-container {
+  flex: 0.8;
+}
+
+.login-header-hello {
+  font-size: 60px;
+  margin-top: 0;
+}
+
+.login-header-desc {
+  font-size: 40px;
+  font-style: italic;
+  color: #3c455d;
+  margin-top: 0;
+}
+
+.login-form {
+  padding: 30px 20px;
+}
+
+.login-form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-item .item-inner {
+  --border-bottom: none !important;
+}
+
+.login-form-item > div {
+  width: 100%;
+}
+
+.login-form-item-label {
+  color: black !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem;
+}
+
+.login-form-item-input {
+  --background: #ebecef;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.login-form-item-input .native-input {
+  height: 50px;
+  padding: 0 1rem;
+}
+
+.login-form-button {
+  width: 100%;
+  padding: 0;
+}
+
+.login-form-button span {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.login-form-button #shadow-root .button-native {
+  background: --ion-color-warning !important;
+}
+
+.item-inner {
+  border-bottom: none;
+}
+
+ion-tab-button {
+    color: #8c8c8c;
+}
+
+ion-tab-button.tab-selected {
+    color: #f0ae43;
+}

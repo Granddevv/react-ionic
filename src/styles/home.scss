@@ -1,0 +1,151 @@
+.ion-page {
+  background: #f3f3f3;
+  overflow-y: auto;
+}
+
+.home-page {
+  ion-header:after {
+    background-image: none;
+  }
+
+  &-header {
+    background: #fbab1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-menu {
+      --background: #fbab1a;
+      --box-shadow: none;
+      width: 40px;
+      
+      ion-menu-button {
+        --color: white;
+      }
+    }
+
+    &-setting {
+      width: 40px;
+      height: 40px;
+      margin-right: 0.5rem;
+      color: white;
+      opacity: 0.5;
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fbab1a;
+    position: relative;
+    box-shadow: 10px 10px 27px rgba(0, 0, 0, 0.2);
+    border-radius: 35%;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: -100px;
+    padding-top: 100px;
+    height: 330px;
+
+    .user-name {
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      margin-top: 2rem;
+    }
+
+    .user-id {
+      font-size: 18px;
+      color: white;
+      font-weight: 300;
+      margin-top: 1rem;
+      margin-bottom: 130px;
+    }
+
+    .user-img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, 0);
+      bottom: -100px;
+      border-radius: 50%;
+      border: 8px solid #efcf95 !important;
+      overflow: hidden;
+    }
+  }
+
+  &-circle {
+    ion-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-big {
+      margin-top: -2rem;
+    }
+  }
+
+  &-step {
+    background: white;
+    border-radius: 8px;
+    margin: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    .step-img {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-style: italic;
+      color: #8b8f9d;
+      align-self: flex-start;
+    }
+
+    &-desc {
+      font-size: 24px;
+      color: #8b8f9d;
+    }
+  }
+}
+
+.menu-container {
+  background: #8b8f9d;
+
+  ion-header:after {
+    background-image: none;
+  }
+
+  ion-item.item-label {
+    background: white;
+  }
+
+  ion-list {
+    padding-bottom: 0;
+  }
+}
+
+.home-menu {
+  z-index: 9999;
+  position: absolute;
+
+  .header-md:after {
+    background-image: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  }
+
+  &-content {
+    --background: #f3f3f3;
+  }
+}
